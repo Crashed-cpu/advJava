@@ -1,0 +1,52 @@
+✅ 1. Basic SQL Syntax (Generic)
+✅ INSERT
+sql
+INSERT INTO table_name (column1, column2, column3)
+VALUES (value1, value2, value3);
+✅ SELECT
+sql
+SELECT column1, column2 FROM table_name;
+✅ UPDATE
+sql
+UPDATE table_name
+SET column1 = value1, column2 = value2
+WHERE condition;
+✅ DELETE
+sql
+DELETE FROM table_name
+WHERE condition;
+✅ 2. Practical‑Ready Example (Student Table)
+Assume this table:
+
+sql
+CREATE TABLE student (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    age INT,
+    city VARCHAR(50)
+);
+Now the queries:
+
+✅ INSERT Example
+sql
+INSERT INTO student (name, age, city)
+VALUES ('Rahul', 21, 'Jaipur');
+✅ SELECT Examples
+Select all rows:
+sql
+SELECT * FROM student;
+Select specific columns:
+sql
+SELECT name, age FROM student;
+Select with condition:
+sql
+SELECT * FROM student WHERE city = 'Jaipur';
+✅ UPDATE Example
+sql
+UPDATE student
+SET age = 22, city = 'Delhi'
+WHERE id = 1;
+✅ DELETE Example
+sql
+DELETE FROM student
+WHERE id = 1
